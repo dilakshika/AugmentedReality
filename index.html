@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IT18378658</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <!-- include A-Frame obviously -->
+        <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+        <!-- include ar.js for A-Frame -->
+        <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    </head>
+    <body style='margin : 0px; overflow: hidden;'>
+        <a-scene embedded arjs>
+
+            <a-marker type='pattern' url='pattern-letterD.patt'>
+                <a-triangle position="0 0 0" rotation="-90 0 0" color="green" scale="1 1 1"></a-triangle>
+                <a-text value="Artifact: Triangle  Name: Perera A.P.A.D." position="-2 1 0.5" rotation="-90 0 0" color="red"></a-text>
+            </a-marker>
+
+             <a-entity camera></a-entity>
+
+        </a-scene>
+    </body>
+</html>
